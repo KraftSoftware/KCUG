@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!--<link href="bootstrap-theme.min.css" rel="stylesheet">-->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Kansas City User Groups</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+            <li><a href="#groups">Groups</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#startups">Startups</a></li>
+            <li><a href="http://kansascityusergroups.blogspot.com/" target="_blank">Blog</a></li>
+            <li><a href="#resources">Resources</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-10 hidden-xs">
+        <b><a href="http://www.google.com/calendar/embed?src=admin%40kansascityusergroups.com&amp;ctz=America/Chicago">Click here for the full page Google Calendar</a> 
+<iframe style="border: 0px currentColor;" height="650" src="http://www.google.com/calendar/embed?src=admin%40kansascityusergroups.com&amp;ctz=America/Chicago" frameborder="0" width="900" scrolling="no"></iframe>
+</div>
+<div class="hidden-sm hidden-md hidden-lg col-xs-6">
+<iframe style="border: 0px currentColor;" height="650" src="https://calendar.google.com/calendar/embed?src=admin@kansascityusergroups.com&ctz=America/Chicago&dates=20160901/20160901&mode=DAY" frameborder="0"  scrolling="no"></iframe>
+  
+        <div class="col-md-2 col-xs-6">
+        <a class="twitter-timeline"  href="https://twitter.com/search?q=%40kcusergroups" data-widget-id="769338542254284800">Tweets about @kcusergroups</a>
+        </div>
+        </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+
+        </div>
+      </div>
+      </br><</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+  </br></br></br>
+    <a name="calendar"></a>Calendar
+      </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+    <a name="resources"></a>Resources
+ 
+
+
+<canvas id="canvas" width="300" height="300"></canvas>
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="twitter.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <!--<script src="../../dist/js/bootstrap.min.js"></script>-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+      <!--//https://github.com/ascorbic/sun-js-->
+    <script>
+  canvas = document.getElementById("canvas");
+ctx = canvas.getContext("2d")
+  
+ctx.lineWidth = 4;
+ctx.strokeStyle = "#333";
+ctx.beginPath();
+ctx.moveTo(10, 200);
+ctx.bezierCurveTo(50, 50, 200, 50, 250, 200);
+ctx.stroke();
+    ctx.moveTo(5,160);
+    ctx.lineTo(255,160);
+    ctx.stroke();
+    ctx.moveTo(25,160);
+    ctx.lineTo(25,210);
+    ctx.stroke();
+    ctx.moveTo(230,160);
+    ctx.lineTo(230,210);
+    ctx.stroke();
+    ctx.moveTo(130,60);
+    ctx.lineTo(130,230);
+    ctx.stroke();
+    ctx.save();
+    </script>
+  </body>
+</html>
